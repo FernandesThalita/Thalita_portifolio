@@ -1,50 +1,50 @@
 import { Container, styled, Typography } from "@mui/material"
 import Grid from '@mui/material/Grid';
-// import img_Avatar from "../../../../assets/img/thalita.jpeg";
+ import img_Avatar from "../../../../assets/img/gif.gif";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
-import theme from "../../../../theme";
+import ButtonStyle from "../../../../componentes/ButtonStyle/ButtonStyle";
+
 
 const Intro = () => {
 
-    const IntroStyle = styled("div")(() => ({
+    const IntroStyle = styled("div")(({theme}) => ({
         backgroundColor: theme.palette.primary.main,
         height: "100vh",
-        color: theme.palette.secondary.dark
+        display: "flex",
+        alignItems: "center",
+        color: theme.palette.primary.contrastText
     }))
-    // const ImgStyle = styled("img")(() => ({
-    //     width: "30%",
-    //     borderRadius: "20%"
-    // }))
-    const ButtonStyle = styled("button")(() => ({
-        appearance: "none",
-        backgroundColor: "transparent"
+    const ImgStyle = styled("img")(() => ({
+        width: "80%",
+        borderRadius: "20%"
     }))
+  
 
     return (
         <>
             <IntroStyle>
                 <Container maxWidth="lg">
                     <Grid container spacing={2}>
-                        {/* <Grid item xs={12} md={4}>
+                        <Grid item xs={12} md={6}>
                             <ImgStyle src={img_Avatar} />
-                        </Grid> */}
-                        <Grid item xs={12} md={12}>
+                        </Grid>
+                        <Grid item xs={12} md={6}>
                             <Typography textAlign="center" variant="h1">Thalita de Lima</Typography>
                             <Typography  variant="h2" textAlign="center">Desenvolvimento de Sistemas</Typography>
 
-                            <Grid container display="flex" justifyContent="center">
+                            <Grid container display="flex" justifyContent="center" spacing={3}>
                                 <Grid item xs={12} md={4} display="flex" justifyContent="center">
-                                    <ButtonStyle>
+                                    <ButtonStyle >
                                         <GitHubIcon />
-                                        GitHub
+                                        <Typography>GitHub</Typography>
                                     </ButtonStyle>
                                 </Grid>
                                 <Grid item xs={12} md={4} display="flex" justifyContent="center">
-                                    <button>
+                                    <ButtonStyle>
                                         <ArrowDownwardIcon />
-                                        Download CV
-                                    </button>
+                                        <Typography>Download CV</Typography>
+                                    </ButtonStyle>
                                 </Grid>
                             </Grid>
                         </Grid>
