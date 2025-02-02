@@ -17,7 +17,7 @@ const Intro = () => {
     }))
     const ImgStyle = styled("img")(() => ({
         width: "80%",
-        borderRadius: "20%"
+        borderRadius: "30%",
     }))
   
 
@@ -25,19 +25,19 @@ const Intro = () => {
         <>
             <IntroStyle>
                 <Container maxWidth="lg">
-                    <Grid container spacing={2}>
-                        <Grid item xs={12} md={6}>
+                    <Grid container spacing={4}>
+                        <Grid item xs={12} md={5} display="flex" justifyContent="center">
                             <ImgStyle src={img_Avatar} />
                         </Grid>
-                        <Grid item xs={12} md={6}>
-                            <Typography textAlign="center" variant="h1">Thalita de Lima</Typography>
-                            <Typography  variant="h2" textAlign="center">Desenvolvimento de Sistemas</Typography>
+                        <Grid item xs={12} md={7}>
+                            <Typography  textAlign="center" variant="h1">Thalita de Lima</Typography>
+                            <Typography  margin="10px 0px 25px 0px" variant="h2" textAlign="center" >Desenvolvimento de Sistemas</Typography>
 
                             <Grid container display="flex" justifyContent="center" spacing={3}>
                                 <Grid item xs={12} md={4} display="flex" justifyContent="center">
                                     <ButtonStyle >
                                         <GitHubIcon />
-                                        <Typography>GitHub</Typography>
+                                        <Typography><a href="https://github.com/FernandesThalita">GitHub</a></Typography>
                                     </ButtonStyle>
                                 </Grid>
                                 <Grid item xs={12} md={4} display="flex" justifyContent="center">
