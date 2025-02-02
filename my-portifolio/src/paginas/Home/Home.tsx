@@ -1,12 +1,11 @@
+import Intro from "./sections/Intro/intro"
 
-
-
-function Home() {
+const Home = () => {
 
 
   return (
     <>
-      homee
+      <Intro/>
     </>
   )
 }
