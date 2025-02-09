@@ -31,7 +31,7 @@ const Intro = () => {
                         </Grid>
                         <Grid item xs={12} md={7}>
                             <Typography  textAlign="center" variant="h1">Thalita de Lima</Typography>
-                            <Typography  margin="10px 0px 25px 0px" variant="h2" textAlign="center" >Desenvolvimento de Sistemas</Typography>
+                            <Typography  margin="10px 0px 25px 0px" variant="h4" textAlign="center" > Análise e Desenvolvimento de Sistemas</Typography>
 
                             <Grid container display="flex" justifyContent="center" spacing={3}>
                                 <Grid item xs={12} md={4} display="flex" justifyContent="center">
